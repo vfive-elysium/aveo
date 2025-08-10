@@ -1,1 +1,19 @@
-<p>resident-directory works!</p>
+<div class="container mt-4">
+  <h2>Residents Directory</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Apartment No</th>
+        <th>Contact</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let resident of residents">
+        <td>{{ resident.name }}</td>
+        <td>{{ resident.apartment }}</td>
+        <td>{{ resident.phone }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

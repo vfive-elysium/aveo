@@ -13,6 +13,7 @@ import { Gallery } from './components/gallery/gallery';
 import { Contact } from './components/contact/contact';
 import { NoticeBoard } from './components/notice-board/notice-board';
 import { ResidentDirectory } from './components/resident-directory/resident-directory';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ResidentDirectory } from './components/resident-directory/resident-dire
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()

@@ -1,0 +1,15 @@
+.btn-gold {
+  background: linear-gradient(135deg, #bfa06a, #8c7a3f);
+  border: none;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(191, 160, 106, 0.7);
+  transition: background-color 0.3s ease;
+}
+
+.btn-gold:hover,
+.btn-gold:focus {
+  background: linear-gradient(135deg, #8c7a3f, #bfa06a);
+  color: white;
+  box-shadow: 0 4px 12px rgba(191, 160, 106, 0.9);
+}
