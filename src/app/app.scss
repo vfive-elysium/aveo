@@ -1,0 +1,12 @@
+/* You can add global styles for app layout here */
+
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+  padding-bottom: 2rem;
+}
