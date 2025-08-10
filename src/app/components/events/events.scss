@@ -1,0 +1,35 @@
+  body {
+      background-color: #fef9ec; /* very light warm background */
+      color: #3a2e00; /* dark warm text */
+      font-family: 'Playfair Display', serif;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+      color: #3a2e00;
+    }
+    
+    h2 {
+      color: #bfa06a;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .list-group-item {
+      font-family: 'Playfair Display', serif;
+      color: #3a2e00;
+      background-color: #fffef8;
+      border: 1px solid rgba(191, 160, 106, 0.5);
+      box-shadow: 0 2px 8px rgba(191, 160, 106, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .list-group-item strong {
+        color: #bfa06a;
+    }
+
+    .list-group-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(191, 160, 106, 0.2);
+    }
+    

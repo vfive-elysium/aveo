@@ -1,0 +1,38 @@
+    .notice-board-card {
+      background: #fffef8;
+      box-shadow: 0 4px 12px rgba(191, 160, 106, 0.15);
+      border-radius: 8px;
+    }
+
+    .notice-board-header {
+      background: linear-gradient(135deg, #bfa06a, #8c7a3f) !important;
+      color: #fff !important;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      box-shadow: 0 2px 6px rgba(191, 160, 106, 0.6);
+      border-bottom: 2px solid #8c7a3f;
+      /* Reverted padding to default */
+    }
+    
+    .notice-board-body h3 {
+      font-family: 'Playfair Display', serif;
+      color: #3a2e00;
+      letter-spacing: 1px;
+      font-weight: 600;
+      border-bottom: 1px solid rgba(191, 160, 106, 0.5);
+      /* Reverted padding and margin to default */
+    }
+
+    .notice-board-body p,
+    .notice-board-body li {
+      color: #3a2e00;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .notice-board-footer {
+      background: #fef9ec !important;
+      color: #3a2e00 !important;
+      font-weight: 600;
+      font-family: 'Playfair Display', serif;
+      border-top: 1px solid rgba(191, 160, 106, 0.5);
+    }

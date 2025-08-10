@@ -1,48 +1,60 @@
-<div class="container mt-4">
-  <h2>Contact Us</h2>
-  <form (ngSubmit)="submitForm()" #contactForm="ngForm">
-    <div class="mb-3">
-      <label for="name" class="form-label">Name</label>
-      <input
-        type="text"
-        id="name"
-        class="form-control"
-        required
-        [(ngModel)]="contact.name"
-        name="name"
-        #name="ngModel"
-      />
-      <div *ngIf="name.invalid && name.touched" class="text-danger">Name is required</div>
+<div class="container my-5">
+  <div class="row justify-content-center gx-5">
+    <!-- Contact Form -->
+    <div class="col-12 col-md-7 col-lg-6">
+      <h2 class="mb-4">Contact Us</h2>
+      <form (ngSubmit)="submitForm()" #contactForm="ngForm" novalidate>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" id="name" class="form-control" required [(ngModel)]="contact.name" name="name"
+            #name="ngModel" [class.is-invalid]="name.invalid && name.touched" />
+          <div *ngIf="name.invalid && name.touched" class="invalid-feedback">
+            Name is required
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" class="form-control" required [(ngModel)]="contact.email" name="email"
+            #email="ngModel" [class.is-invalid]="email.invalid && email.touched" />
+          <div *ngIf="email.invalid && email.touched" class="invalid-feedback">
+            Valid email is required
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" rows="5" class="form-control" required [(ngModel)]="contact.message" name="message"
+            #message="ngModel" [class.is-invalid]="message.invalid && message.touched"></textarea>
+          <div *ngIf="message.invalid && message.touched" class="invalid-feedback">
+            Message is required
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100" [disabled]="contactForm.invalid">
+          Send
+        </button>
+      </form>
     </div>
 
-    <div class="mb-3">
-      <label for="email" class="form-label">Email</label>
-      <input
-        type="email"
-        id="email"
-        class="form-control"
-        required
-        [(ngModel)]="contact.email"
-        name="email"
-        #email="ngModel"
-      />
-      <div *ngIf="email.invalid && email.touched" class="text-danger">Valid email is required</div>
+    <!-- Contact Info Card -->
+    <div class="col-12 col-md-5 col-lg-4 mt-5 mt-md-0">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title mb-3 text-primary fw-bold">VFIVE HOMES PRIVATE LIMITED</h5>
+          <address class="card-text mb-3">
+            TC-15/1161, AL-BAYTH, VAZHUTHACAUD, VAZHUTHACAUD<br />
+            Thiruvananthapuram, 695014<br />
+            <small class="text-muted">Landmark: Opp. Cotton Hill Pre-Primary School</small>
+          </address>
+          <p class="mb-2">
+            <strong>Email:</strong> <a href="mailto:accounts@vfivehomes.com">accounts@vfivehomes.com</a>
+          </p>
+          <p class="mb-0">
+            <strong>Phone:</strong> <a href="tel:+919747413666">9747413666</a>
+          </p>
+        </div>
+      </div>
     </div>
-
-    <div class="mb-3">
-      <label for="message" class="form-label">Message</label>
-      <textarea
-        id="message"
-        rows="4"
-        class="form-control"
-        required
-        [(ngModel)]="contact.message"
-        name="message"
-        #message="ngModel"
-      ></textarea>
-      <div *ngIf="message.invalid && message.touched" class="text-danger">Message is required</div>
-    </div>
-
-    <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">Send</button>
-  </form>
+  </div>
 </div>

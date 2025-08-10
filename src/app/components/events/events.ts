@@ -17,8 +17,11 @@ export class Events implements OnInit {
   ngOnInit() {
     // In real app, fetch from API or service
     this.events = [
-      { title: 'Onam Celebration', date: new Date(2025, 7, 31), description: 'Cultural programs and Sadya' },
-      { title: 'Apartment AGM', date: new Date(2025, 9, 15), description: 'Annual General Meeting of residents' },
+
+
+      { title: 'Independence Day Celebrations', date: new Date(2025, 7, 15), description: 'Flag Hoisitng, Patriotioc Song, India in Many Languages, Quiz Competition' },
+
+      { title: 'Onam Celebration', date: new Date(2025, 7, 31), description: 'Cultural programs, Sports and Sadya' },
     ];
   }
 }

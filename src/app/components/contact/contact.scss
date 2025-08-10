@@ -1,0 +1,69 @@
+    body {
+      background-color: #fef9ec; /* very light warm background */
+      color: #3a2e00; /* dark warm text */
+      font-family: 'Playfair Display', serif;
+    }
+    
+    .card.themed-card {
+      background: #fffef8;
+      box-shadow: 0 4px 12px rgba(191, 160, 106, 0.15);
+      border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+      color: #3a2e00;
+    }
+    
+    h2 {
+      color: #bfa06a;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    
+    .card-title {
+      font-family: 'Playfair Display', serif;
+      color: #bfa06a !important; /* Rich gold color for card titles */
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .form-label, .card-text, .small, strong {
+      font-family: 'Playfair Display', serif;
+      color: #3a2e00;
+    }
+    
+    .form-control {
+      border: 1px solid #bfa06a;
+      background-color: #fffef8;
+      color: #3a2e00;
+    }
+    
+    .form-control:focus {
+      border-color: #8c7a3f;
+      box-shadow: 0 0 0 0.25rem rgba(191, 160, 106, 0.25);
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #bfa06a, #8c7a3f);
+      border: none;
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      transition: all 0.3s;
+    }
+    
+    .btn-primary:hover {
+      opacity: 0.9;
+    }
+    
+    a {
+      color: #bfa06a;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: #8c7a3f;
+      text-decoration: underline;
+    }
